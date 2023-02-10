@@ -2,13 +2,11 @@ import { LogLevel } from "../types";
 
 
 export enum ColorId {
-	BLACK = "#000000",
-	CYAN = "#049ED0",
-	GRAY = "#C4C4C4",
+	CYAN = "#02B0E5",
+	GRAY = "#939496",
 	GREEN = "#3DC9B0",
-	RED = "#C63131",
-	WHITE = "#ffffff",
-	YELLOW = "#CC880C",
+	RED = "#ED1010",
+	YELLOW = "#EAEA07",
 }
 
 export enum LevelId {
@@ -20,6 +18,10 @@ export enum LevelId {
 }
 
 export const DEFAULT_CONFIG: LogLevel[] = [
+	{
+		id: LevelId.DEBUG,
+		color: ColorId.GRAY
+	},
 	{
 		id: LevelId.ERROR,
 		color: ColorId.RED
